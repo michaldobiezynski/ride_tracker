@@ -18,7 +18,7 @@ public class RestControllerTest {
 		RestTemplate restTemplate = new RestTemplate();
 
 		Ride ride = new Ride();
-		ride.setName("Michal's race");
+		ride.setName("Yellowfork Trail");
 		ride.setDuration(33);
 
 		//restTemplate.put("http://localhost:8080/ride_tracker_war/ride", ride);
@@ -42,4 +42,43 @@ public class RestControllerTest {
 			System.out.println("Ride name: " + ride.getName());
 		}
 	}
+
+	@Test(timeout=90000)
+	public void testGetRide() {
+		RestTemplate restTemplate = new RestTemplate();
+
+		Ride ride = restTemplate.getForObject("http://localhost:8080/ride_tracker_war/ride/1", Ride.class);
+
+		System.out.println("Ride name: " + ride.getName());
+	}
+
+	@Test(timeout=90000)
+	public void testUpdateRide() {
+		RestTemplate restTemplate = new RestTemplate();
+
+		Ride ride = restTemplate.getForObject("http://localhost:8080/ride_tracker_war/ride/1", Ride.class);
+
+		ride.setDuration(ride.getDuration() + 1);
+
+		restTemplate.put("http://localhost:8080/ride_tracker_war/ride/1", ride);
+
+		System.out.println("Ride name: " + ride.getName());
+	}
+
+	@Test(timeout=90000)
+	public void testBatchUpdate() {
+		RestTemplate restTemplate = new RestTemplate();
+
+		restTemplate.getForObject("http://localhost:8080/ride_tracker_war/batch", Object.class);
+
+	}
+
+	@Test(timeout=90000)
+	public void testDelete() {
+		RestTemplate restTemplate = new RestTemplate();
+
+		restTemplate.delete("http://localhost:8080/ride_tracker_war/delete/11");
+	}
+
+
 }
