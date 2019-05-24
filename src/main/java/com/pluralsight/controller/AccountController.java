@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -30,11 +31,20 @@ public class AccountController {
         return "showAccount";
     }
 
+
+
     @RequestMapping(value = "/saveAccount",method = RequestMethod.POST)
-    public String saveAccount(Model model, HttpServletRequest request) {
+    public String saveAccount(Model model,
+                              @RequestParam("accountNo") String acNo,
+                              @RequestParam("accountHolderName") String customerName,
+                              @RequestParam("balance") String balance) {
+
+        /*
         String acNo = request.getParameter("accountNo");
         String customerName = request.getParameter("accountHolderName");
         String balance = request.getParameter("balance");
+
+         */
 
 //        model.addAttribute("accountNumber", acNo);
 //        model.addAttribute("accountHolderName", customerName);
