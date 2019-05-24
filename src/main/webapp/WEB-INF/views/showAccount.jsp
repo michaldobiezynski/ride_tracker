@@ -13,9 +13,14 @@
 <body>
 <h2>PS: Bank Account Details </h2>
 
-<p>Account # : ${param.accountNo}</p>
-<p>Account Holder Name : ${param.accountHolderName}</p>
-<p>Balance : ${param.balance}</p>
+<%--<p>Account # : ${param.accountNo}</p>--%>
+<%--<p>Account Holder Name : ${param.accountHolderName}</p>--%>
+<%--<p>Balance : ${param.balance}</p>--%>
+
+<p>Account # : ${account.accountNo}</p>
+<p>Account Holder Name : ${account.accountHolderName}</p>
+<p>Balance : ${account.balance}</p>
+
 
 </body>
 </html>
