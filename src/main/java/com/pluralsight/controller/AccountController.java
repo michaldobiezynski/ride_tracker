@@ -17,7 +17,9 @@ public class AccountController {
     }
 
     @RequestMapping("/new")
-    public String newAccount() {
+    public String newAccount(Model model) {
+
+        model.addAttribute("account", new Account());
 
         return "newAccount";
 
@@ -28,7 +30,7 @@ public class AccountController {
         return "showAccount";
     }
 
-    @RequestMapping(value = "/saveAccount",method = RequestMethod.GET)
+    @RequestMapping(value = "/saveAccount",method = RequestMethod.POST)
     public String saveAccount(Model model, HttpServletRequest request) {
         String acNo = request.getParameter("accountNo");
         String customerName = request.getParameter("accountHolderName");
