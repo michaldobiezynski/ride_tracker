@@ -12,7 +12,7 @@
 </head>
 <body>
 <h2>Create New Account</h2>
-<form name="accountForm" action="showAccount">
+<form name="accountForm" action="saveAccount">
     <table>
         <tr>
             <td>Account #: </td>
