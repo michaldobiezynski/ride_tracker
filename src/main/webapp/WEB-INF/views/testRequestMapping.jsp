@@ -12,5 +12,7 @@
 </head>
 <body>
 <h2>Understanding RequestMapping in Detail</h2>
+
+<h3>Welcome ${userName}</h3>
 </body>
 </html>
