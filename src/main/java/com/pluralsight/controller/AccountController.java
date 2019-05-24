@@ -37,17 +37,6 @@ public class AccountController {
     public String saveAccount(Model model,
                               Account account) {
 
-        /*
-        String acNo = request.getParameter("accountNo");
-        String customerName = request.getParameter("accountHolderName");
-        String balance = request.getParameter("balance");
-
-         */
-
-//        model.addAttribute("accountNumber", acNo);
-//        model.addAttribute("accountHolderName", customerName);
-//        model.addAttribute("balance", balance);
-        
         model.addAttribute("account", account);
 
         return "showAccount";
