@@ -11,11 +11,11 @@ import javax.validation.constraints.*;
 public class Account {
 
     @Valid
-    @NotNull(message = "Account# can't be blank")
+    @NotNull
     private Integer accountNo;
 
     @Valid
-    @NotBlank(message = "Account Holder Name can't be blank")
+    @NotBlank
     @Size(min=2,max=50,message="Invalid length for Account Holder Name")
     @Pattern(regexp="[A-Za-z(\\s)]+",message="Invalid Account Holder Name")
     private String accountHolderName;

@@ -5,8 +5,6 @@ import javax.validation.ConstraintValidatorContext;
 
 public class PSCodeConstraintValidator implements ConstraintValidator<PSCode, String> {
 
-    public String codePrefix = "PS";
-
     @Override
     public void initialize(PSCode code) {
 
