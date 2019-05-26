@@ -4,9 +4,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 import java.util.Date;
 
 import javax.validation.Valid;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-
+import javax.validation.constraints.*;
 
 
 public class Account {
@@ -17,10 +15,13 @@ public class Account {
 
     @Valid
     @NotBlank(message = "Account Holder Name can't be blank")
+    @Size(min=2,max=50,message="Invalid length for Account Holder Name")
+    @Pattern(regexp="[A-Za-z(\\s)]+",message="Invalid Account Holder Name")
     private String accountHolderName;
 
     @Valid
     @NotNull(message = "Balance can't be blank")
+    @Min(value=5000,message="Minimum balance must not be less than 5000")
     private Integer balance;
 
     @Valid
@@ -30,6 +31,7 @@ public class Account {
     @Valid
     @DateTimeFormat(pattern="MM/dd/yyyy")
     @NotNull(message = "Data of birth can't be blank")
+    @Past(message="Account cant be created for a person not born")
     private Date dataOfBirth;
 
     @Valid
