@@ -1,19 +1,23 @@
 package com.pluralsight.controller;
 
+import com.pluralsight.Services.AccountService;
+import com.pluralsight.Services.AccountServiceImpl;
 import com.pluralsight.model.Account;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 
-import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
 @Controller
 public class AccountController {
+
+    @Autowired
+    AccountService accountService;
 
     @InitBinder
     public void initBinder(WebDataBinder dataBinder) {
@@ -31,7 +35,7 @@ public class AccountController {
 
         model.addAttribute("account", new Account());
 
-        return "newAccount";
+        return "account-form";
 
     }
 
@@ -47,10 +51,11 @@ public class AccountController {
                               BindingResult result) {
 
         if( result.hasErrors()) {
-            return "newAccount";
+            return "account-form";
         }
         else {
-            return "showAccount";
+            accountService.saveAccount(account);
+            return "redirect:/list";
         }
 
 
