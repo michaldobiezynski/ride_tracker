@@ -53,8 +53,8 @@
         </tr>
         <tr>
             <td><spring:message code="lbl.dob" /></td>
-            <td><form:input path="dataOfBirth" size="30" />
-                <form:errors path="dataOfBirth" cssClass="error" />
+            <td><form:input path="dateOfBirth" size="30" />
+                <form:errors path="dateOfBirth" cssClass="error" />
             </td>
 
         </tr>

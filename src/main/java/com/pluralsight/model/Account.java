@@ -1,5 +1,6 @@
 package com.pluralsight.model;
 
+import com.pluralsight.Validations.PSCode;
 import org.springframework.format.annotation.DateTimeFormat;
 import java.util.Date;
 
@@ -32,9 +33,10 @@ public class Account {
     @DateTimeFormat(pattern="MM/dd/yyyy")
     @NotNull(message = "Data of birth can't be blank")
     @Past(message="Account cant be created for a person not born")
-    private Date dataOfBirth;
+    private Date dateOfBirth;
 
     @Valid
+    @PSCode
     @NotBlank(message = "PS Code can't be blank")
     private String psCode;
 
@@ -44,7 +46,7 @@ public class Account {
         accountHolderName = "";
         balance = null;
         accountType = "";
-        dataOfBirth = new Date();
+        dateOfBirth = new Date();
         psCode = "";
     }
 
@@ -55,7 +57,7 @@ public class Account {
         this.accountHolderName = holderName;
         this.balance = balance;
         this.accountType = accType;
-        this.dataOfBirth = dob;
+        this.dateOfBirth = dob;
         this.psCode = psCode;
     }
 
@@ -92,12 +94,12 @@ public class Account {
         this.accountType = accountType;
     }
 
-    public Date getDataOfBirth() {
-        return dataOfBirth;
+    public Date getDateOfBirth() {
+        return dateOfBirth;
     }
 
-    public void setDataOfBirth(Date dataOfBirth) {
-        this.dataOfBirth = dataOfBirth;
+    public void setDateOfBirth(Date dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
     }
 
     public String getPsCode() {
