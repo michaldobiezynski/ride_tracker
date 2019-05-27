@@ -9,6 +9,7 @@
 
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <html>
 <head>
@@ -26,9 +27,9 @@
         <tbody>
         <c:forEach var="account" items="${accounts}">
             <tr>
-                <td>${account.accountNo}</td>
-                <td>${account.accountHolderName}</td>
-                <td>${account.balance}</td>
+                <td>${account.accountNo} </td>
+                <td>${account.accountHolderName} </td>
+                <td>${account.balance} </td>
             </tr>
         </c:forEach>
         </tbody>
