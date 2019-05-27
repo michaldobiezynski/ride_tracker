@@ -12,6 +12,7 @@ import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.List;
 
 @Controller
 public class AccountController {
@@ -59,6 +60,13 @@ public class AccountController {
         }
 
 
+    }
+
+    @GetMapping("/list")
+    public String listAccounts(Model model) {
+        List<Account> accounts = accountService.getAccounts();
+        model.addAttribute("accounts", accounts);
+        return "listAccounts";
     }
 
 }
