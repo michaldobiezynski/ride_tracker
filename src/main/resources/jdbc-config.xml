@@ -21,10 +21,10 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.sprin
 
 <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
     <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-    <property name="url" value="jdbc:mysql://localhost:3306/ride_tracker"/>
+    <property name="url" value="jdbc:mysql://localhost:3306/psbankdb"/>
     <property name="username" value="root"/>
-    <!--		<property name="password" value="gemalto"/>-->
-    <property name="password" value="m1ch4l1234"/>
+    		<property name="password" value="gemalto"/>
+    <!--<property name="password" value="m1ch4l1234"/>-->
 </bean>
 
 <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
