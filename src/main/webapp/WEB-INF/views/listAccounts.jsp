@@ -24,13 +24,13 @@
         </tr>
         </thead>
         <tbody>
-        <c:forEacj var="account" items="${accounts}">
+        <c:forEach var="account" items="${accounts}">
             <tr>
                 <td>${account.accountNo}</td>
                 <td>${account.accountHolderName}</td>
                 <td>${account.balance}</td>
             </tr>
-        </c:forEacj>
+        </c:forEach>
         </tbody>
     </table>
 
