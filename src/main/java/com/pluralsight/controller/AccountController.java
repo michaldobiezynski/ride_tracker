@@ -74,4 +74,9 @@ public class AccountController {
         return "account-form";
     }
 
+    @GetMapping("/delete")
+    public String deleteAccount(@RequestParam("accountNo") int accountNo, Model model) {
+        accountService.deleteAccount(accountNo);
+        return "redirect:list";
+    }
 }

@@ -10,4 +10,6 @@ public interface AccountService {
     public List<Account> getAccounts();
 
     Account getAccount(Integer accountNo);
+
+    public boolean deleteAccount(int accountNo);
 }
