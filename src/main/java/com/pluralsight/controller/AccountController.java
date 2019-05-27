@@ -46,7 +46,6 @@ public class AccountController {
     }
 
 
-
     @RequestMapping(value = "/saveAccount",method = RequestMethod.POST)
     public String saveAccount(@Valid @ModelAttribute("account") Account account,
                               BindingResult result) {
@@ -59,7 +58,6 @@ public class AccountController {
             return "redirect:/list";
         }
 
-
     }
 
     @GetMapping("/list")
@@ -67,6 +65,13 @@ public class AccountController {
         List<Account> accounts = accountService.getAccounts();
         model.addAttribute("accounts", accounts);
         return "listAccounts";
+    }
+
+    @GetMapping("/edit")
+    public String updateAccount(@RequestParam("accountNo") int accountNo, Model model) {
+        Account account = accountService.getAccount(new Integer(accountNo));
+        model.addAttribute("account", account);
+        return "account-form";
     }
 
 }

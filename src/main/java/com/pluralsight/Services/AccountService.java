@@ -9,4 +9,5 @@ public interface AccountService {
 
     public List<Account> getAccounts();
 
+    Account getAccount(Integer accountNo);
 }

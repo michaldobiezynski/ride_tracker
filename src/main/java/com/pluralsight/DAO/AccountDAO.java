@@ -10,4 +10,5 @@ public interface AccountDAO {
 
     public List<Account> getAccounts();
 
+    Account getAccount(Integer accountNo);
 }
