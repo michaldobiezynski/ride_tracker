@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="ride_tracker:war exploded">
-    <output-path>$PROJECT_DIR$/target/ride_tracker</output-path>
+    <output-path>$PROJECT_DIR$/target/psbank</output-path>
     <properties id="maven-jee-properties">
       <options>
         <exploded>true</exploded>
@@ -60,10 +60,13 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-orm:5.1.6.RELEASE" />
           <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
           <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.9.4" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:5.1.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:5.1.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:5.1.5.RELEASE" />
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/target/ride_tracker/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/target/psbank/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="ride_tracker/web/Web" />
     </root>

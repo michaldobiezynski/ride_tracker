@@ -7,7 +7,7 @@
         <packaging>war</packaging>
       </options>
     </properties>
-    <root id="archive" name="ride_tracker.war">
+    <root id="archive" name="psbank.war">
       <element id="artifact" artifact-name="ride_tracker:war exploded" />
     </root>
   </artifact>
