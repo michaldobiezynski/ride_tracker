@@ -25,6 +25,7 @@
             <td><spring:message code="lbl.accountNo" /></td>
             <td><form:input path="accountNo" size="30" />
                 <form:errors path="accountNo" cssClass="error" />
+                <b><font color="red">${message}</font> </b>
             </td>
 
         </tr>

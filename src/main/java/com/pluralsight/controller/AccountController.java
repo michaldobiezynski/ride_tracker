@@ -48,13 +48,34 @@ public class AccountController {
 
     @RequestMapping(value = "/saveAccount",method = RequestMethod.POST)
     public String saveAccount(@Valid @ModelAttribute("account") Account account,
-                              BindingResult result) {
+                              BindingResult result, Model model) {
 
-        if( result.hasErrors()) {
+//        if( result.hasErrors()) {
+//            return "account-form";
+//        }
+//        else {
+//            accountService.saveAccount(account);
+//            return "redirect:/list";
+//        }
+
+        if (result.hasErrors()) {
             return "account-form";
-        }
-        else {
-            accountService.saveAccount(account);
+        } else {
+            String message = "";
+            boolean flag = true;
+
+            try {
+                flag = accountService.saveAccount(account);
+            }
+            catch (Exception ex) {
+                message = ex.getMessage();
+                flag = false;
+            }
+            if(!flag) {
+                model.addAttribute("message", message);
+                return "account-form";
+            }
+            model.addAttribute("account", account);
             return "redirect:/list";
         }
 
