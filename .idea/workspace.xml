@@ -9,8 +9,9 @@
     <list default="true" id="24922a4c-d57e-4d83-85ba-49dc0c5607ea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/servlet-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/servlet-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/account-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/account-form.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/listAccounts.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/listAccounts.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,10 +28,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/listAccounts.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="94" selection-start-line="24" selection-start-column="94" selection-end-line="24" selection-end-column="94" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/pluralsight/controller/AccountController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="50" column="63" selection-start-line="50" selection-start-column="63" selection-end-line="50" selection-end-column="63" />
+            <state relative-caret-position="269">
+              <caret line="92" column="61" lean-forward="true" selection-start-line="92" selection-start-column="61" selection-end-line="92" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#963#964#0" expanded="true" />
@@ -43,52 +53,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/account-form.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="26" column="10" lean-forward="true" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/servlet-config.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="875">
-              <caret line="68" column="68" selection-start-line="68" selection-start-column="68" selection-end-line="68" selection-end-column="68" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc-config.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="33" column="68" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="62" column="81" selection-start-line="62" selection-start-column="81" selection-end-line="62" selection-end-column="81" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="1322">
+              <caret line="92" column="68" selection-start-line="92" selection-start-column="61" selection-end-line="92" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -141,7 +109,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/account.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/pluralsight/model/Account.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pluralsight/Entity/AccountEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/listAccounts.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/pluralsight/Services/AccountService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pluralsight/Services/AccountServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pluralsight/DAO/AccountDAO.java" />
@@ -150,14 +117,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/pluralsight/aop/AccountAspect.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pluralsight/DAO/AccountDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/pluralsight/controller/AccountController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/account-form.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/footer.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/servlet-config.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/jdbc-config.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/config/servlet-config.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/account-form.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/listAccounts.jsp" />
       </list>
     </option>
   </component>
@@ -211,6 +179,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -234,6 +203,93 @@
               <item name="ride_tracker" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ride_tracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ride_tracker" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pluralsight" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ride_tracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ride_tracker" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pluralsight" type="462c0819:PsiDirectoryNode" />
+              <item name="aop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ride_tracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ride_tracker" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pluralsight" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ride_tracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ride_tracker" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pluralsight" type="462c0819:PsiDirectoryNode" />
+              <item name="DAO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ride_tracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ride_tracker" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pluralsight" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ride_tracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ride_tracker" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pluralsight" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ride_tracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ride_tracker" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pluralsight" type="462c0819:PsiDirectoryNode" />
+              <item name="Services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ride_tracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ride_tracker" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pluralsight" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ride_tracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ride_tracker" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pluralsight" type="462c0819:PsiDirectoryNode" />
+              <item name="Validations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ride_tracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ride_tracker" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -249,13 +305,72 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ride_tracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ride_tracker" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ride_tracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ride_tracker" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ride_tracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ride_tracker" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ride_tracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ride_tracker" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ride_tracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ride_tracker" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ride_tracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ride_tracker" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ride_tracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ride_tracker" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ride_tracker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -521,7 +636,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74788000" />
+    <option name="totallyTimeSpent" value="78910000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -533,10 +648,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1633" height="1012" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30476192" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29756796" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -548,7 +663,7 @@
       <window_info id="Persistence" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299363" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49960256" visible="true" weight="0.39697322" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960256" visible="true" weight="0.3477707" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3993015" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -757,16 +872,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pluralsight/model/Account.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="43" column="2" selection-start-line="43" selection-start-column="2" selection-end-line="50" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/pluralsight/Entity/AccountEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-187">
@@ -779,17 +884,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/listAccounts.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="28" column="15" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
-          <folding>
-            <element signature="e#756#762#0#HTML" expanded="true" />
-            <element signature="e#786#792#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/pluralsight/Services/AccountService.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -827,27 +921,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="112" column="50" lean-forward="true" selection-start-line="112" selection-start-column="50" selection-end-line="112" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/pluralsight/aop/PSBankLoggingAspect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="56" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
+        <state relative-caret-position="238">
+          <caret line="34" column="69" lean-forward="true" selection-start-line="34" selection-start-column="69" selection-end-line="34" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/account-form.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -871,13 +951,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.xhtml" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/header.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -899,35 +973,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/pluralsight/controller/AccountController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="50" column="63" selection-start-line="50" selection-start-column="63" selection-end-line="50" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#963#964#0" expanded="true" />
-            <element signature="e#993#994#0" expanded="true" />
-            <element signature="e#1231#1232#0" expanded="true" />
-            <element signature="e#1267#1268#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/images/stay-online.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="62" column="81" selection-start-line="62" selection-start-column="81" selection-end-line="62" selection-end-column="81" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -936,17 +983,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="112" column="50" selection-start-line="112" selection-start-column="50" selection-end-line="112" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/config/servlet-config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="875">
-          <caret line="68" column="68" selection-start-line="68" selection-start-column="68" selection-end-line="68" selection-end-column="68" />
+        <state relative-caret-position="166">
+          <caret line="46" column="52" lean-forward="true" selection-start-line="46" selection-start-column="52" selection-end-line="46" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc-config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="33" column="68" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
+        <state relative-caret-position="390">
+          <caret line="26" column="50" lean-forward="true" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pluralsight/model/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="35" column="28" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/listAccounts.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="94" selection-start-line="24" selection-start-column="94" selection-end-line="24" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/account-form.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1322">
+          <caret line="92" column="68" selection-start-line="92" selection-start-column="61" selection-end-line="92" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pluralsight/controller/AccountController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="92" column="61" lean-forward="true" selection-start-line="92" selection-start-column="61" selection-end-line="92" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#963#964#0" expanded="true" />
+            <element signature="e#993#994#0" expanded="true" />
+            <element signature="e#1231#1232#0" expanded="true" />
+            <element signature="e#1267#1268#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

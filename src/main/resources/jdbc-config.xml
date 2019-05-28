@@ -23,7 +23,7 @@
     <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
     <property name="url" value="jdbc:mysql://localhost:3306/psbankdb?useSSL=false"/>
     <property name="username" value="root"/>
-    		<!--<property name="password" value="gemalto"/>-->
+<!--    		<property name="password" value="gemalto"/>-->
     <property name="password" value="m1ch4l1234"/>
 </bean>
 
