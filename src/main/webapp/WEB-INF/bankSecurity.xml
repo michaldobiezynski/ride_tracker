@@ -25,11 +25,7 @@
 
     <authentication-manager>
         <authentication-provider>
-             <user-service>
-                <user name="admin" password="woodmac" authorities="ROLE_ADMIN" />
-                <user name="michal" password="stachu" authorities="ROLE_USER" />
-             </user-service>
-<!--            <user-service properties="/WEB-INF/user.properties" /> &ndash;&gt;-->
+            <user-service properties="/WEB-INF/user.properties" />
 <!--            <jdbc-user-service data-source-ref="dataSource"-->
 <!--                               users-by-username-query="SELECT username, password, 'true' as enabled-->
 <!--				FROM member WHERE username = ?"-->
