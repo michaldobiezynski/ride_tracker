@@ -10,7 +10,7 @@ public interface AccountDAO {
 
     public List<Account> getAccounts();
 
-    Account getAccount(Integer accountNo);
+    public Account getAccount(Integer accountNo);
 
     public boolean deleteAccount(int accountNo);
 }
