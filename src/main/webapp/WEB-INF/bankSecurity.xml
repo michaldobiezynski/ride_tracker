@@ -33,13 +33,13 @@
 
     <authentication-manager>
         <authentication-provider>
-            <user-service properties="/WEB-INF/user.properties" />
-<!--            <jdbc-user-service data-source-ref="dataSource"-->
-<!--                               users-by-username-query="SELECT username, password, 'true' as enabled-->
-<!--				FROM member WHERE username = ?"-->
-<!--                               authorities-by-username-query="SELECT member.username, member_role.role-->
-<!--				as authorities FROM member, member_role-->
-<!--                           WHERE member.username = ? AND member.id = member_role.member_id" />-->
+<!--            <user-service properties="/WEB-INF/user.properties" />-->
+            <jdbc-user-service data-source-ref="dataSource"
+                               users-by-username-query="SELECT username, password, 'true' as enabled
+				FROM member WHERE username = ?"
+                               authorities-by-username-query="SELECT member.username, member_role.role
+				as authorities FROM member, member_role
+                           WHERE member.username = ? AND member.id = member_role.member_id" />
         </authentication-provider>
     </authentication-manager>
 
