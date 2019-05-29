@@ -17,8 +17,8 @@
                         Happiness = A good bank account, a good cook and a good digestion - Jean
                     </p>
 
-                    <a href="/user/new" class = "btn btn-lg btn-success">Register Here</a>
-                    <p><br />Existing Users: <a href="/user/login">Login Here</a> </p>
+                    <a href="/ride_tracker_war/user/new" class = "btn btn-lg btn-success">Register Here</a>
+                    <p><br />Existing Users: <a href="/ride_tracker_war/user/login">Login Here</a> </p>
                 </div>
             </div>
         </div>

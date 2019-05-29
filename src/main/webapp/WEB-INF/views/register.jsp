@@ -11,6 +11,6 @@
     <title>Title</title>
 </head>
 <body>
-<h2>Welcoe to PS Bank Registration Form</h2>
+<h2>Welcome to PS Bank Registration Form</h2>
 </body>
 </html>

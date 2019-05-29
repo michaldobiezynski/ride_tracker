@@ -44,6 +44,7 @@
 	<servlet-mapping>
 		<servlet-name>SpringController</servlet-name>
 		<url-pattern>/</url-pattern>
+		<url-pattern>/user</url-pattern>
 
 	</servlet-mapping>
 
