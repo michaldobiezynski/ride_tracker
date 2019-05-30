@@ -15,26 +15,29 @@ public class AccountRESTController {
     @Autowired
     private AccountService accountService;
 
+//    @ResponseBody
+    @RequestMapping(value = "/{id}",
+            produces = "application/json", method = RequestMethod.POST)
+    public Account getAccount(@PathVariable("id") Integer accountNo) {
+        System.out.println("Requested Account Number: " + accountNo);
+        Account account = accountService.getAccount(accountNo);
+        return account;
+    }
+
+
+
 
 //    @ResponseBody
-//    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-//    public Account getAccount(@PathVariable("id") Integer accountNo) {
-//        System.out.println("Requested Account Number: " +accountNo);
-//        Account account = accountService.getAccount(accountNo);
-//        return account;
+//    @RequestMapping(value = "/{id}", method=RequestMethod.POST)
+//    public ResponseEntity<Account> getAccount(@RequestBody Account accnt) {
+//        System.out.println("Requested Account Number: " + accnt.getAccountNo());
+//        Account account = accountService.getAccount(accnt.getAccountNo());
+//        if (account == null) {
+//            return new ResponseEntity( HttpStatus.NOT_FOUND);
+//        }
+//        return new ResponseEntity<Account>(account, HttpStatus.OK);
+//        //return account;
 //    }
-//
-
-    @ResponseBody
-    @RequestMapping(method=RequestMethod.POST)
-    public ResponseEntity<Account> getAccount(int accountNo) {
-        Account account = accountService.getAccount(accountNo);
-        if (account == null) {
-            return new ResponseEntity( HttpStatus.NOT_FOUND);
-        }
-        return new ResponseEntity<Account>(account, HttpStatus.OK);
-        //return account;
-    }
 
 
 }

@@ -35,7 +35,6 @@
           <element id="library" level="project" name="Maven: org.hibernate.validator:hibernate-validator-annotation-processor:6.0.16.Final" />
           <element id="library" level="project" name="Maven: org.hibernate.validator:hibernate-validator-cdi:6.0.16.Final" />
           <element id="library" level="project" name="Maven: io.agroal:agroal-pool:0.4" />
-          <element id="library" level="project" name="Maven: io.agroal:agroal-api:0.4" />
           <element id="library" level="project" name="Maven: com.mchange:c3p0:0.9.5.4" />
           <element id="library" level="project" name="Maven: org.hibernate:hibernate-c3p0:5.4.2.Final" />
           <element id="library" level="project" name="Maven: com.mchange:mchange-commons-java:0.2.15" />
@@ -64,6 +63,7 @@
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:4.2.3.RELEASE" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.4" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.4" />
+          <element id="library" level="project" name="Maven: io.agroal:agroal-api:0.4" />
         </element>
       </element>
       <element id="directory" name="META-INF">

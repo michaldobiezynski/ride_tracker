@@ -159,8 +159,17 @@
 
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/io.agroal/agroal-api -->
+		<dependency>
+			<groupId>io.agroal</groupId>
+			<artifactId>agroal-api</artifactId>
+			<version>0.4</version>
+		</dependency>
 
-    </dependencies>
+
+	</dependencies>
+
+
 	<build>
 		<finalName>psbank</finalName>
 		<plugins>
