@@ -105,4 +105,38 @@ public class AccountController {
         accountService.deleteAccount(accountNo);
         return "redirect:list";
     }
+
+    @ResponseBody
+    @RequestMapping(value = "/{id}", method = RequestMethod.GET)
+    public Account getAccount(@PathVariable("id") Integer accountNo) {
+        System.out.println("Requested Account Number: " +accountNo);
+        Account account = accountService.getAccount(accountNo);
+        return account;
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
