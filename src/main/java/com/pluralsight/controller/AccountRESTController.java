@@ -9,23 +9,22 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping(value = "/account")
+@RequestMapping("/account")
 public class AccountRESTController {
 
     @Autowired
     private AccountService accountService;
 
-//    @ResponseBody
-    @RequestMapping(value = "/{id}",
-            produces = "application/json", method = RequestMethod.POST)
-    public Account getAccount(@PathVariable("id") Integer accountNo) {
+    @ResponseBody
+    @RequestMapping(method=RequestMethod.POST)
+    public ResponseEntity<Account> getAccount(int accountNo) {
         System.out.println("Requested Account Number: " + accountNo);
         Account account = accountService.getAccount(accountNo);
-        return account;
+        if(account == null) {
+            return new ResponseEntity(HttpStatus.NOT_FOUND);
+        }
+        return new ResponseEntity<Account>(account, HttpStatus.OK);
     }
-
-
-
 
 //    @ResponseBody
 //    @RequestMapping(value = "/{id}", method=RequestMethod.POST)

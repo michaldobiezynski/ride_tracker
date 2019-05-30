@@ -11,6 +11,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <title>PS Bank: Search Account Holder</title>
 </head>
+
 <body>
 <div class="container">
     <%@ include file="header.jsp"%>
@@ -46,7 +47,7 @@
                     <h3>Search Results</h3>
                 </div>
                 <div class="card-body">
-                    <div id="accountNo"></div>
+                    <div id="accountNo2"></div>
                     <div id="accountHolderName"></div>
                     <div id="accountType"></div>
                     <div id="balance"></div>
@@ -71,7 +72,9 @@
     <%@ include file="footer.jsp"%>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.2.1.min.js">
+<script  src="https://code.jquery.com/jquery-3.4.1.js"
+         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+         crossorigin="anonymous">
     $(document).ready(function($) {
         $('#divResults').hide();
         $('#divError').hide();
@@ -86,14 +89,20 @@
         $("#btn-search").prop("disabled", flag);
     }
     function searchViaAjax() {
+
         var accnt = {}
         accnt["accountNo"] = $("#accountNo").val();
         $.ajax({
+            url : "http://localhost:8080/ride_tracker_war/account",
             type : "POST",
+            dataType : 'JSON',
+            procesData:false,
             contentType : "application/json",
-            url : "http://localhost:8080/ride_tracker_war/account}",
+
             data : JSON.stringify(accnt),
-            dataType : 'json',
+
+
+
             timeout : 100000,
             success : function(data) {
                 display(data);
@@ -110,7 +119,7 @@
 
 
     function display(data) {
-        $('#accountNo').html("Account Number:" + data["accountNo"]);
+        $('#accountNo2').html("Account Number:" + data["accountNo"]);
         $('#accountHolderName').html("Holder name:" + data["accountHolderName"]);
         $('#balance').html("Balance:" + data["balance"]);
         $('#accountType').html("Account Type :" + data["accountType"]);

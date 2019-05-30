@@ -99,5 +99,7 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.4" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.4" level="project" />
     <orderEntry type="library" name="Maven: io.agroal:agroal-api:0.4" level="project" />
+    <orderEntry type="library" name="jquery-3.2.1" level="application" />
+    <orderEntry type="library" name="jquery-3.4.1" level="application" />
   </component>
 </module>
