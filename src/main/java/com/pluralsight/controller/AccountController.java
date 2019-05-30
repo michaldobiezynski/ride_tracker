@@ -114,6 +114,11 @@ public class AccountController {
         return account;
     }
 
+    @RequestMapping(value = "/find", method = RequestMethod.GET)
+    public String viewAccount(Model model) {
+        return "findAccount";
+    }
+
 }
 
 
