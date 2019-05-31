@@ -73,4 +73,6 @@
 
 	<mvc:resources mapping="/resources/**" location="/resources/" />
 
+	<import resource="bankFlowDef.xml" />
+
 </beans>
